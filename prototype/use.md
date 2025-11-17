@@ -1,0 +1,1 @@
+in deze folder word het prototype gebouwd dus hier word de TailwindCSs geïnstalleerd en word er gewerkt aan de website de game integratie word hier later aan toegevoegd die word eerst gemaakt in een ander repo om merge issues te voorkomen

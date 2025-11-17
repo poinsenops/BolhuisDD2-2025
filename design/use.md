@@ -1,0 +1,1 @@
+in deze folder word alle design details aangetoond (wireframes, schetsen, visuals)
