@@ -10,22 +10,21 @@
 - [Realistische haalbaarheid](#realistische-haalbaarheid)
 
 ## Inleiding
-Beschrijf hier kort het project waar jullie deze week aan werken. Bijvoorbeeld: wat is het doel van het project, wie is de opdrachtgever, wat willen we bereiken, wie is de doelgroep en wat is de kern van de ervaring die we willen neerzetten.
+Wij willen de website moderniseren en een game invoegen.
 ## Must-haves
-De minimale functionaliteiten die écht moeten werken in jullie prototype.
+Navbar, responsive, locatie, logo, game, contact gegevens.
 ## Nice-to-haves
-Ideeën die waardevol zijn, maar alleen worden opgepakt als er tijd over is.
+Een game om korting te winnen
 ### Functionele eisen
-Wat moet het product kunnen vanuit gebruikersperspectief?
+De website moet de huidige functionaliteit houden (bestellen, producten bekijken etc.)
 ## Technische eisen
-Wat is technisch noodzakelijk of verplicht (bijv. CMS-keuze, frameworks, integraties)?
+tailwind, game integratie
 ## Afspraken binnen het team
-Hoe werken jullie samen? Denk aan taakverdeling, communicatie, deadlines en werkwijze.
+We gaan met 2 personen aan de website en met 2 personen aan de game.
+Aan het begin van elke dag gaan we het hebben over wat we die dag doen.
+We bespreken per dag wat we doen en dat word vervolgens de deadline voor die dag, voor algemene deadline willen we proberen om donderdag ochten klaar te zijn met ons prototype.
+Wij gebruiken de scrum werkwijze.
 ## Techniekenlijst
-Een overzicht van alle tools en technieken die jullie willen gebruiken. Bijvoorbeeld: Tailwind CSS, Unity, React, Three.js, APIs, databases, etc.
+Javascript, tailwind, css, html en unity 2d
 ## Realistische haalbaarheid
-Maak een korte inschatting:
-
-Wat kunnen wij in vier dagen écht maken?
-
-Het minimale resultaat is een eerste prototype of duidelijk concept.
+Wij willen deze week de website moderniseren en een game daarbij maken.
