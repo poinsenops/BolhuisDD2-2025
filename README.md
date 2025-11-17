@@ -1,2 +1,2 @@
 # BolhuisDD2-2025
-website for Bolhuis kwekerij to update there outdated website
+website for Bolhuis kwekerij to update their outdated website
