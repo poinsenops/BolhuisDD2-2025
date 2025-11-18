@@ -5,10 +5,8 @@ website for Bolhuis kwekerij to update their outdated website
 
 go to the prototype folder in ur cli and run
 
-`cli
-npm install tailwindcss @tailwindcss/cli`
+`npm install tailwindcss @tailwindcss/cli`
 
 and after that run 
-`cli
-npm run watch`
+`npm run watch`
 
