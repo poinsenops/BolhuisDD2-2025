@@ -1,1 +1,21 @@
 @import "tailwindcss";
+
+@layer base {
+    :root {
+        --color-den: #384734;
+        --color-cred: #a13a28;
+        --color-koper: #e7a04e;
+    }
+}
+
+@layer utilities {
+    .bg-den { background-color: var(--color-den); }
+    .text-den { color: var(--color-den); }
+    .border-den { border-color: var(--color-den); }
+    .bg-cred { background-color: var(--color-cred); }
+    .text-cred { color: var(--color-cred); }
+    .border-cred { border-color: var(--color-cred); }
+    .bg-koper { background-color: var(--color-koper); }
+    .text-koper { color: var(--color-koper); }
+    .border-koper { border-color: var(--color-koper); }
+}
