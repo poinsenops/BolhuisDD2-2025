@@ -1,0 +1,33 @@
+# Node dependencies
+node_modules/
+
+# Tailwind CLI output file
+src/output.css
+src/output.css.map
+
+# Optional build directories (if you ever create them)
+build/
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+*.log
+
+# Environment files
+.env
+.env.*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor config
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
