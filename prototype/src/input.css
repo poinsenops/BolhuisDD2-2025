@@ -35,5 +35,13 @@
     .text-koper { color: var(--color-koper); }
     .border-koper { border-color: var(--color-koper); }
     .hover\:bg-koper:hover { background-color: var(--color-koper); }
+    .hover\:border-koper:hover { border-color: var(--color-koper); }
+    .focus\:border-koper:focus { border-color: var(--color-koper); }
+    .focus\:ring-koper:focus,
+    .focus\:ring-koper:focus-visible {
+        outline: none;
+        box-shadow: 0 0 0 3px var(--color-koper);
+        border-color: var(--color-koper);
+    }
     .hover\:text-koper:hover { color: var(--color-koper); }
 }

@@ -3,6 +3,7 @@ import Hero from "../components/jesse/hero.js";
 import blogSectionHome from "../components/jesse/blogSectionHome.js";
 import kiekje from "../components/jesse/kiekje.js";
 import komBijOnsLangs from "../components/jesse/kom-bij-ons-langs.js";
+import contact from "../components/jesse/contact.js";
 
 const Home = (app) => {
     const section = document.createElement('section');
@@ -26,6 +27,9 @@ const Home = (app) => {
 
     const newsSection = blogSectionHome("In de Media", "media", "#/in-de-media", "https://placeholder.pics/svg/300/DEDEDE/555555/media%20foto");
     container.appendChild(newsSection);
+
+    const contactSection = contact();
+    container.appendChild(contactSection);
 
 
     section.appendChild(container);
