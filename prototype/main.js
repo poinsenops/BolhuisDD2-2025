@@ -34,14 +34,12 @@ function renderHome() {
     app.appendChild(homeEl);
 }
 
-function renderAanmelden() {
-    const app = ensureApp();
-    app.innerHTML = '<h1>Aanmelden</h1><p>Sign-up form or component goes here.</p>';
-}
-
 function renderWebshop() {
     const app = ensureApp();
-    app.innerHTML = '<h1>Webshop</h1><p>Webshop content goes here.</p>';
+    app.innerHTML = `
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1>Webshop</h1><p>Webshop content goes here.</p>
+    </div>`;
 }
 
 function renderGame() {
@@ -77,7 +75,6 @@ function renderNotFound() {
 // routes mapped by normalized hash (no leading # or /)
 const routes = {
     '': renderHome,
-    'aanmelden': renderAanmelden,
     'webshop': renderWebshop,
     'game': renderGame,
     'geschiedenis': renderGeschiedenis,
