@@ -2,7 +2,7 @@ const geschiedenis = () => {
     const page = document.createElement("section");
     page.innerHTML = `
         <!-- Hero Section -->
-        <div class="relative w-full h-72 md:h-[32rem] overflow-hidden shadow-xl rounded-b-2xl">
+        <div class="relative w-full h-72 md:h-128 overflow-hidden shadow-xl rounded-b-2xl">
             <img 
                 src="public/images/DSC02941.avif" 
                 alt="Kwekerij Bolhuis" 
