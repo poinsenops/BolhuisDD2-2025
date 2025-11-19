@@ -1,5 +1,21 @@
 @import "tailwindcss";
 
+@font-face {
+    font-family: "Bitter Boldhuis";
+    src: url("../public/fonts/Bitter-Boldhuis.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --font-bitter: "Bitter Boldhuis", ui-serif, Georgia, "Times New Roman", serif;
+}
+
+@layer utilities {
+    .font-bitter { font-family: var(--font-bitter) !important; }
+}
+
 @layer base {
     :root {
         --color-den: #384734;
@@ -18,4 +34,5 @@
     .bg-koper { background-color: var(--color-koper); }
     .text-koper { color: var(--color-koper); }
     .border-koper { border-color: var(--color-koper); }
+    .hover\:bg-koper:hover { background-color: var(--color-koper); }
 }
