@@ -1,7 +1,6 @@
-import Navbar from "./components/navbar.js";
-import Hero from "./components/hero.js";
-import Footer from "./components/footer.js";
-import Home from "./components/home.js";
+import Navbar from "./components/jesse/navbar.js";
+import Footer from "./components/jesse/footer.js";
+import Home from "./pages/home.js";
 
 const root = document.getElementById('root');
 
@@ -30,12 +29,8 @@ function renderHome() {
     const app = ensureApp();
     app.innerHTML = '';
 
-    const heroEl = Hero();
-    app.appendChild(heroEl);
-
-    const homeEl = Home();
-    app.appendChild(homeEl);}
-
+    Home(app);
+}
 function renderAanmelden() {
     const app = ensureApp();
     app.innerHTML = '<h1>Aanmelden</h1><p>Sign-up form or component goes here.</p>';
