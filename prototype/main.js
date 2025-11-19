@@ -30,10 +30,7 @@ function renderHome() {
     const app = ensureApp();
     app.innerHTML = '';
 
-    const heroEl = Hero();
-    app.appendChild(heroEl);
-
-    const homeEl = Home();
+    const homeEl = Home(app);
     app.appendChild(homeEl);
 }
 
