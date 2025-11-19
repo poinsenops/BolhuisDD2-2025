@@ -35,4 +35,5 @@
     .text-koper { color: var(--color-koper); }
     .border-koper { border-color: var(--color-koper); }
     .hover\:bg-koper:hover { background-color: var(--color-koper); }
+    .hover\:text-koper:hover { color: var(--color-koper); }
 }
