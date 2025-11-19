@@ -1,6 +1,8 @@
-import Navbar from "./components/jesse/navbar.js";
-import Footer from "./components/jesse/footer.js";
-import Home from "./pages/home.js";
+import Navbar from "./components/navbar.js";
+import Hero from "./components/hero.js";
+import Footer from "./components/footer.js";
+import Home from "./components/home.js";
+import geschiedenis from "./components/geschiedenis.js";
 
 const root = document.getElementById('root');
 
@@ -29,8 +31,13 @@ function renderHome() {
     const app = ensureApp();
     app.innerHTML = '';
 
-    Home(app);
+    const heroEl = Hero();
+    app.appendChild(heroEl);
+
+    const homeEl = Home();
+    app.appendChild(homeEl);
 }
+
 function renderAanmelden() {
     const app = ensureApp();
     app.innerHTML = '<h1>Aanmelden</h1><p>Sign-up form or component goes here.</p>';
@@ -48,7 +55,10 @@ function renderGame() {
 
 function renderGeschiedenis() {
     const app = ensureApp();
-    app.innerHTML = '<h1>Geschiedenis</h1><p>History content goes here.</p>';
+    app.innerHTML = '';
+
+    const geschiedenisEl = geschiedenis();
+    app.appendChild(geschiedenisEl);
 }
 function renderKiekje() {
     const app = ensureApp();
