@@ -46,7 +46,7 @@ function renderWebshop() {
     const app = ensureApp();
     app.innerHTML = `
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1>Webshop</h1><p>Webshop content goes here.</p>
+        <h1>Webshop</h1><p>Webshop content goes here. hier ben ik nog niet aan toe gekmen en gaat ook niet gemaakt worden</p>
     </div>`;
 }
 
@@ -80,7 +80,7 @@ function renderKweker() {
 }
 function renderSamplePost() {
     const app = ensureApp();
-    app.innerHTML = '<h1>Sample Blog Post</h1><p>This is a sample blog post content.</p>';
+    app.innerHTML = '<h1>Sample Blog Post</h1><p>This is a sample blog post content. hier ben ik nog niet aan toe gekomen</p>';
 }
 
 function renderNotFound() {
