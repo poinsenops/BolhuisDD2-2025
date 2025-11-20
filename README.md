@@ -10,3 +10,7 @@ go to the prototype folder in ur cli and run
 and after that run 
 `npm run watch`
 
+## de game
+
+de game staat in een andere repository namelijk: https://github.com/ThijmenE/deepdive-bolhuis
+

@@ -3,7 +3,7 @@ const contact = () => {
     section.className = 'py-12 bg-white';
     section.innerHTML = `
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row gap-12 font-inter">
-            <div class="w-1/2">
+            <div class="lg:w-1/2">
                 <h2 class="text-3xl font-extrabold text-gray-900 mb-6">Contacteer Ons</h2>
                 <form class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
                     <div>

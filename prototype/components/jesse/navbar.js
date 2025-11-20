@@ -120,6 +120,29 @@ const Navbar = () => {
         });
     }
 
+    // Close the media dropdown when navigating away (link clicks or history changes)
+    if (mediaMenu) {
+        const closeMedia = () => {
+            if (!mediaMenu.classList.contains("hidden")) {
+                mediaMenu.classList.add("hidden");
+                if (mediaBtn) mediaBtn.setAttribute("aria-expanded", "false");
+            }
+        };
+
+        // Delegate link clicks inside the nav: if the href is not a same-page hash, treat as navigation
+        nav.addEventListener("click", (e) => {
+            const a = e.target.closest("a");
+            if (!a) return;
+            const href = a.getAttribute("href") || "";
+            if (href === "" || href.startsWith("#")) return; // ignore pure hash anchors / empty links
+            closeMedia();
+        });
+
+        // Close on history navigation or hash changes (back/forward)
+        window.addEventListener("popstate", closeMedia);
+        window.addEventListener("hashchange", closeMedia);
+    }
+
     // Mobile: make the "Media" section collapsible/toggleable
     const mobileMenuEl = nav.querySelector("#mobile-menu");
     if (mobileMenuEl) {
