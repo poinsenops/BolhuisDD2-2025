@@ -24,7 +24,7 @@ const contact = () => {
                     </div>
                     <div class="sm:col-span-2">
                         <div class="border border-cred border-3 w-fit rounded-sm shadow-lg transform transition-transform duration-150 hover:scale-[1.05] hover:shadow-xl">
-                            <button type="submit" class="inline-flex justify-center py-2 px-4 border border-white border-2 text-sm font-medium rounded-sm text-white bg-cred  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-koper">
+                            <button type="submit" class="font-bitter inline-flex justify-center py-2 px-4 border border-white border-2 text-sm font-medium rounded-sm text-white bg-cred  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-koper">
                                 Verstuur Bericht
                             </button>
                         </div>
