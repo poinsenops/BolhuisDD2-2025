@@ -2,7 +2,7 @@ const geschiedenis = () => {
     const page = document.createElement("section");
 
     page.innerHTML = `
-        <div class="flex flex-col gap-12 mt-8">
+        <div class="flex flex-col gap-12 my-8">
             <div class="grid md:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
                 <div class="space-y-4">
                     <h2 class="text-2xl font-bold text-den">Hoe wij zijn begonnen</h2>
