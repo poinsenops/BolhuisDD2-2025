@@ -2,6 +2,7 @@ import Navbar from "./components/jesse/navbar.js";
 import Footer from "./components/jesse/footer.js";
 import Home from "./pages/home.js";
 import geschiedenis from "./components/geschiedenis.js";
+import kiekje from "./components/kijkdekerstin.js";
 
 const root = document.getElementById('root');
 
@@ -58,7 +59,9 @@ function renderGeschiedenis() {
 }
 function renderKiekje() {
     const app = ensureApp();
-    app.innerHTML = '<h1>Kiekje</h1><p>Kiekje content goes here.</p>';
+
+    const kiekjeEl = kiekje();
+    app.appendChild(kiekjeEl);
 }
 function renderInDeMedia() {
     const app = ensureApp();
