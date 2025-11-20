@@ -1,7 +1,10 @@
 import Navbar from "./components/jesse/navbar.js";
 import Footer from "./components/jesse/footer.js";
 import Home from "./pages/home.js";
-import geschiedenis from "./components/geschiedenis.js";
+import geschiedenis from "./pages/geschiedenis.js";
+import BlogPage from "./pages/door-de-ogen-van-de-kweker.js";
+import media from "./pages/in-de-media.js";
+import game from "./pages/game.js";
 
 const root = document.getElementById('root');
 
@@ -14,7 +17,14 @@ if (root && !document.getElementById('site-navbar')) {
 
 root.insertAdjacentHTML('afterend', Footer());
 
-// ensure main app container exists
+document.documentElement.classList.add('h-full');
+document.body.classList.add('min-h-screen', 'flex', 'flex-col');
+
+const footer = document.getElementById('footer');
+if (footer) {
+    footer.classList.add('mt-auto', 'w-full');
+}
+
 function ensureApp() {
     let app = document.getElementById('root');
     if (!app) {
@@ -25,13 +35,10 @@ function ensureApp() {
     return app;
 }
 
-// simple render helpers — replace contents with your real components
 function renderHome() {
     const app = ensureApp();
     app.innerHTML = '';
-
-    const homeEl = Home(app);
-    app.appendChild(homeEl);
+    Home(app);
 }
 
 function renderWebshop() {
@@ -44,7 +51,8 @@ function renderWebshop() {
 
 function renderGame() {
     const app = ensureApp();
-    app.innerHTML = '<h1>Game</h1><p>Game content goes here.</p>';
+    app.innerHTML = '';
+    game(app);
 }
 
 function renderGeschiedenis() {
@@ -60,11 +68,17 @@ function renderKiekje() {
 }
 function renderInDeMedia() {
     const app = ensureApp();
-    app.innerHTML = '<h1>In de Media</h1><p>In de Media content goes here.</p>';
+    app.innerHTML = '';
+    media(app);
 }
 function renderKweker() {
     const app = ensureApp();
-    app.innerHTML = '<h1>Door de ogen van de kweker</h1><p>Content goes here.</p>';
+    app.innerHTML = '';
+    BlogPage(app);
+}
+function renderSamplePost() {
+    const app = ensureApp();
+    app.innerHTML = '<h1>Sample Blog Post</h1><p>This is a sample blog post content.</p>';
 }
 
 function renderNotFound() {
@@ -81,6 +95,7 @@ const routes = {
     'kiekje': renderKiekje,
     'in-de-media': renderInDeMedia,
     'door-de-ogen-van-de-kweker': renderKweker,
+    'door-de-ogen-van-de-kweker/sample-post': renderSamplePost,
     '404': renderNotFound
 };
 
