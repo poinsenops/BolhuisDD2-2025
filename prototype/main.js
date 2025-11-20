@@ -5,6 +5,7 @@ import geschiedenis from "./pages/geschiedenis.js";
 import BlogPage from "./pages/door-de-ogen-van-de-kweker.js";
 import media from "./pages/in-de-media.js";
 import game from "./pages/game.js";
+import kiekje from "./pages/kiekje.js";
 
 const root = document.getElementById('root');
 
@@ -64,7 +65,8 @@ function renderGeschiedenis() {
 }
 function renderKiekje() {
     const app = ensureApp();
-    app.innerHTML = '<h1>Kiekje</h1><p>Kiekje content goes here.</p>';
+    app.innerHTML = '';
+    kiekje(app);
 }
 function renderInDeMedia() {
     const app = ensureApp();
