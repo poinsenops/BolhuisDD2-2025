@@ -16,7 +16,7 @@ const BlogPage = (app) => {
     const blogPost = document.createElement('div');
     blogPost.className = 'max-w-7xl mx-auto px-4 sm:px-6 :px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 py-8';
     const headline = document.createElement('div');
-    headline.className = 'col-span-1 sm:col-span-2 md:col-span-3';
+    headline.className = 'col-span-1 sm:col-span-2 md:col-span-3 bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl hover:scale-105 transition-shadow duration-300';
     headline.appendChild(blogCard(undefined, 'https://placeholder.pics/svg/600/DEDEDE/555555/Featured%20Blog%20Image'));
     blogPost.appendChild(headline);
     for (let i = 1; i <= 10; i++) {
