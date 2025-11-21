@@ -1,5 +1,6 @@
 const blogCard = (href = '#/door-de-ogen-van-de-kweker/sample-post', imgSrc = 'https://placeholder.pics/svg/300/DEDEDE/555555/blog%20post%20image') => {
-    const card = document.createElement('div');
+    const card = document.createElement('a');
+    card.href = href;
     card.className = 'bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300';
     const title = card.dataset.title || 'Blog Title';
     const excerpt = card.dataset.excerpt || 'A brief excerpt from the blog post to give readers an idea of the content.';

@@ -44,6 +44,7 @@ function renderHome() {
 
 function renderWebshop() {
     const app = ensureApp();
+    document.title = "Bolhuis || Webshop";
     app.innerHTML = `
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1>Webshop</h1><p>Webshop content goes here. hier ben ik nog niet aan toe gekmen en gaat ook niet gemaakt worden</p>
@@ -80,11 +81,13 @@ function renderKweker() {
 }
 function renderSamplePost() {
     const app = ensureApp();
+    document.title = "Bolhuis || Blog - Sample Post";
     app.innerHTML = '<h1>Sample Blog Post</h1><p>This is a sample blog post content. hier ben ik nog niet aan toe gekomen</p>';
 }
 
 function renderNotFound() {
     const app = ensureApp();
+    document.title = "Bolhuis || 404 Not Found";
     app.innerHTML = '<h1>404</h1><p>Page not found.</p>';
 }
 

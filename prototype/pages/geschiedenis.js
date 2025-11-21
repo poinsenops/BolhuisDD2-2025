@@ -1,4 +1,5 @@
 const geschiedenis = () => {
+    document.title = "Bolhuis || Geschiedenis";
     const page = document.createElement("section");
 
     page.innerHTML = `
@@ -61,7 +62,7 @@ const geschiedenis = () => {
                 <div class="p-10 text-white max-w-7xl mx-auto">
                     <h2 class="text-2xl font-bold mb-6">Onze missie vandaag</h2>
                     <p class="leading-relaxed">
-                        Doordat we het volledige proces — van zaaien tot verkoop — zelf uitvoeren, kunnen we kerstbomen
+                        Doordat we het volledige proces van zaaien tot verkoop zelf uitvoeren, kunnen we kerstbomen
                         van de hoogste kwaliteit garanderen.
                     </p>
                     <p class="leading-relaxed">
@@ -74,7 +75,7 @@ const geschiedenis = () => {
                         ons onderzoek beschikken we nu over meerdere herkomsten die uitstekend geschikt zijn voor de teelt.
                     </p>
                     <p class="leading-relaxed">
-                        Op onze kwekerij zijn we 365 dagen per jaar bezig met kerstbomen – bij ons is het eigenlijk altijd kerst!
+                        Op onze kwekerij zijn we 365 dagen per jaar bezig met kerstbomen, bij ons is het eigenlijk altijd kerst!
                     </p>
                 </div>
             </div>

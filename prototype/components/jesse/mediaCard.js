@@ -1,6 +1,6 @@
 const mediaCard = (i) => {
     const mediaItem = document.createElement('div');
-        mediaItem.className = 'bg-white rounded-lg shadow-md overflow-hidden max-h-64';
+        mediaItem.className = 'bg-white rounded-lg shadow-md overflow-hidden max-h-64 hover:scale-105 transform transition-transform duration-150';
         mediaItem.innerHTML = `
             <img src="https://placeholder.pics/svg/300/DEDEDE/555555/Media%20Image%20${i}" alt="Media Image ${i}" class="w-full h-1/2 object-cover">
             <div class="p-3 h-1/2 justify-center flex flex-col">

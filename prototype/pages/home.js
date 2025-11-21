@@ -6,6 +6,8 @@ import komBijOnsLangs from "../components/jesse/kom-bij-ons-langs.js";
 import contact from "../components/jesse/contact.js";
 
 const Home = (app) => {
+    document.title = "Bolhuis || Home";
+
     const section = document.createElement('section');
 
     const container = document.createElement('div');

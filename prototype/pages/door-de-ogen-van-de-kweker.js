@@ -24,6 +24,8 @@ const BlogPage = (app) => {
         section.appendChild(blogPost);
     }
 
+    document.title = "Bolhuis || Blog - Door de ogen van de Kweker";
+
     app.appendChild(section);
 }
 

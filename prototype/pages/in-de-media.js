@@ -1,6 +1,7 @@
 import mediaCard from '../components/jesse/mediaCard.js';
 
 const media =  (app) => {
+    document.title = "Bolhuis || In de Media";
     const section = document.createElement('section');
     section.className = 'bg-den sm:mt-8 mt-2 text-gray-200 font-inter shadow-lg';
     section.innerHTML = `
